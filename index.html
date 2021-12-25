@@ -17,12 +17,28 @@
 
   <main class="main">
     <section class="hero">
-      <div class="hero__image-container">
+      <picture class="hero__image-container">
+        <source
+        srcset="assets/tablet/image-hero@2x.jpg" 
+        media="all and (min-width: 768px)"
+        />
+        <source
+          srcset="assets/tablet/image-hero.jpg" 
+          media="all and (min-width: 750px)"
+        />
+        <source
+        srcset="assets/mobile/image-hero@2x.jpg" 
+        media="all and (min-width: 376px)"
+        />
+        <source
+          srcset="assets/mobile/image-hero.jpg"
+          media="all and (max-width:375px)"
+        />
         <img src="assets/mobile/image-hero.jpg" alt="hero" class="hero__image">
-      </div>
+      </picture>
       <div class="hero__content">
         <h1 class="hero__heading">
-          Modern Art Gallery
+          <span class="hero__heading-break">Modern</span> Art Gallery
         </h1>
         <p class="hero__paragraph">
           The arts in the collection of the Modern Art Gallery all started 
@@ -40,25 +56,73 @@
       </div>
     </section>
     <section class="gallery">
-      <div class="gallery__grid">
+      <picture class="gallery__grid gallery__grid1">
+        <source
+        srcset="assets/tablet/image-grid-1@2x.jpg"
+        media="all and (min-width:768px)"
+        />
+        <source
+        srcset="assets/tablet/image-grid-1.jpg"
+        media="all and (min-width:750px)"
+        />
+        <source
+        srcset="assets/mobile/image-grid-1.jpg"
+        media="all and (max-width:375px)"
+        />
+        <source
+          srcset="assets/mobile/image-grid-1@2x.jpg" 
+          media="all and (min-width: 376px)"
+        />
         <img src="assets/mobile/image-grid-1.jpg" alt="gallery image" class="hero__image">
-      </div>
-      <div class="gallery__grid gallery__grid-text1">
+      </picture>
+      <div class="gallery__grid gallery__grid-text1 gallery__grid2">
         <h2 class="gallery__heading">
-          Your day at the gallery
+          <span class="gallery__heading-break">Your day</span>at the gallery
         </h2>
         <p class="gallery__paragraph">
           Wander through our distinct collections and find new insights about 
           our artists. Dive into the details of their creative process.
         </p>
       </div>
-      <div class="gallery__grid">
+      <picture class="gallery__grid gallery__grid3">
+        <source
+        srcset="assets/tablet/image-grid-2@2x.jpg"
+        media="all and (min-width:768px)"
+        />
+        <source
+        srcset="assets/tablet/image-grid-2.jpg"
+        media="all and (min-width:750px)"
+        />
+        <source
+        srcset="assets/mobile/image-grid-2.jpg"
+        media="all and (max-width:375px)"
+        />
+        <source
+          srcset="assets/mobile/image-grid-2@2x.jpg" 
+          media="all and (min-width: 376px)"
+        />
         <img src="assets/mobile/image-grid-2.jpg" alt="gallery image" class="gallery__Image">
-      </div>
-      <div class="gallery__grid">
+      </picture>
+      <picture class="gallery__grid gallery__grid4">
+        <source
+        srcset="assets/tablet/image-grid-3@2x.jpg"
+        media="all and (min-width:768px)"
+        />
+        <source
+        srcset="assets/tablet/image-grid-3.jpg"
+        media="all and (min-width:750px)"
+        />
+        <source
+        srcset="assets/mobile/image-grid-3.jpg"
+        media="all and (max-width:375px)"
+        />
+        <source
+          srcset="assets/mobile/image-grid-3@2x.jpg" 
+          media="all and (min-width: 376px)"
+        />
         <img src="assets/mobile/image-grid-3.jpg" alt="gallery image" class="gallery__Image">
-      </div>
-      <div class="gallery__grid gallery__grid-text2">
+      </picture>
+      <div class="gallery__grid gallery__grid-text2 gallery__grid5">
         <h2 class="gallery__heading">
           Come &amp; be inspired
         </h2>
@@ -72,7 +136,7 @@
 
   <footer class="footer">
     <h3 class="footer__heading">
-      Modern Art Gallery
+      <span class="footer__heading-break">Modern</span> Art Gallery
     </h3>
     <p class="footer__paragraph">
       The Modern Art Gallery is free to all visitors and open seven days a week 
