@@ -161,6 +161,10 @@ html {
   font-size: 62.5%;
 }
 
+li {
+  list-style: none;
+}
+
 body {
   font-family: 'Outfit', sans-serif;
   font-weight: 400;
@@ -172,6 +176,10 @@ h1, h2, h3 {
   font-weight: 900;
   text-transform: uppercase;
   color: #151515;
+}
+
+img {
+  display: block;
 }
 
 .main, .footer {
@@ -209,7 +217,7 @@ h1, h2, h3 {
   margin-bottom: 2.8rem;
 }
 
-.hero__link {
+.link {
   color: white;
   text-transform: uppercase;
   padding: 2.4rem 3.5rem 2.4rem 3.2rem;
@@ -221,7 +229,7 @@ h1, h2, h3 {
   letter-spacing: 3.64px;
 }
 
-.hero__arrow {
+.arrow {
   background: #D5966C;
   width: 5.6rem;
   height: 7.2rem;
@@ -236,7 +244,7 @@ h1, h2, h3 {
           align-items: center;
 }
 
-.hero__link-container {
+.link-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,8 +310,8 @@ h1, h2, h3 {
 
 .footer__heading {
   color: white;
-  font-size: 1.6rem;
-  line-height: 1.6rem;
+  font-size: 2.3rem;
+  line-height: 2.3rem;
 }
 
 .footer__heading-break {
@@ -322,9 +330,74 @@ h1, h2, h3 {
   gap: 2rem;
 }
 
+.footer--accent {
+  background: #D5966C;
+  color: #151515;
+}
+
+.footer--accent .fab {
+  color: #151515;
+}
+
+.footer__heading-dark {
+  color: #151515;
+}
+
 .fab {
   font-size: 2rem;
   color: white;
+}
+
+.fab:hover {
+  color: #D5966C;
+}
+
+.map {
+  position: relative;
+}
+
+.link-position {
+  position: absolute;
+  top: 0;
+}
+
+.location {
+  padding: 4.8rem 1.6rem 5.6rem;
+  background: #151515;
+  color: White;
+}
+
+.location__heading {
+  color: White;
+  font-size: 5rem;
+  line-height: 4.5rem;
+  margin-bottom: 4.8rem;
+}
+
+.location__subheading {
+  color: #D5966C;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+.location__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.location__paragraph {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
 }
 
 @media screen and (min-width: 750px) {
