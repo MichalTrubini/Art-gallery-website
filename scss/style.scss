@@ -57,6 +57,7 @@ img {
     color: white;
     text-transform: uppercase;
     padding: 2.4rem 3.5rem 2.4rem 3.2rem;
+    transition: background 500ms;
     background: $background-link-body;
     font-weight: 800;
     font-size: 2rem;
@@ -66,6 +67,7 @@ img {
 }
 
 .arrow {
+    transition: background 500ms;
     background: $background-link-arrow;
     width: 5.6rem;
     height: 7.2rem;
@@ -515,4 +517,14 @@ img {
     .link-position {
         left: 16.5rem;
     }
+}
+
+.link-proper:hover > .link-container .link {
+    transition: background 500ms;
+    background: $Gold;
+}
+
+.link-proper:hover > .link-container .arrow {
+    transition: background 500ms;
+    background: $Almost-Black;
 }

@@ -221,6 +221,8 @@ img {
   color: white;
   text-transform: uppercase;
   padding: 2.4rem 3.5rem 2.4rem 3.2rem;
+  -webkit-transition: background 500ms;
+  transition: background 500ms;
   background: #151515;
   font-weight: 800;
   font-size: 2rem;
@@ -230,6 +232,8 @@ img {
 }
 
 .arrow {
+  -webkit-transition: background 500ms;
+  transition: background 500ms;
   background: #D5966C;
   width: 5.6rem;
   height: 7.2rem;
@@ -664,5 +668,17 @@ img {
   .link-position {
     left: 16.5rem;
   }
+}
+
+.link-proper:hover > .link-container .link {
+  -webkit-transition: background 500ms;
+  transition: background 500ms;
+  background: #D5966C;
+}
+
+.link-proper:hover > .link-container .arrow {
+  -webkit-transition: background 500ms;
+  transition: background 500ms;
+  background: #151515;
 }
 /*# sourceMappingURL=style.css.map */
